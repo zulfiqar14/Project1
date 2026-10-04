@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101226">
+  <title>About | Hello, world!</title>
+  <style>
+    :root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    * { box-sizing: border-box; }
+    body { min-height: 100vh; margin: 0; display: grid; place-items: center; padding: 6rem 1.25rem 2rem; color: #f7f5ff; background: #101226; background-image: radial-gradient(ellipse at 20% 15%, #4e35a84d, transparent 40%), radial-gradient(ellipse at 85% 80%, #087e9c38, transparent 38%); }
+    .orb { position: fixed; width: 19rem; aspect-ratio: 1; border-radius: 50%; filter: blur(70px); opacity: .28; pointer-events: none; animation: drift 12s ease-in-out infinite alternate; }
+    .one { background: #a855f7; top: -8rem; left: -5rem; } .two { background: #22d3ee; right: -8rem; bottom: -9rem; animation-delay: -5s; }
+    nav { position: fixed; z-index: 2; top: 1.5rem; left: 50%; display: flex; gap: .5rem; padding: .45rem; transform: translateX(-50%); border: 1px solid #ffffff20; border-radius: 999px; background: #101226b8; backdrop-filter: blur(14px); }
+    nav a { padding: .65rem 1rem; border-radius: 999px; color: #c7c4dc; font-size: .9rem; text-decoration: none; transition: color .2s, background .2s; }
+    nav a:hover, nav a:focus-visible { color: #fff; background: #ffffff14; }
+    main { width: min(90vw, 760px); position: relative; padding: clamp(2rem, 7vw, 5.5rem); text-align: center; border: 1px solid #ffffff20; border-radius: 32px; background: linear-gradient(145deg, #ffffff0e, #ffffff05); box-shadow: 0 32px 100px #0006, inset 0 1px #ffffff18; backdrop-filter: blur(18px); }
+    .eyebrow { color: #c7c4dc; font-size: .76rem; letter-spacing: .14em; text-transform: uppercase; }
+    h1 { margin: 1.25rem 0 1rem; font-size: clamp(3rem, 9vw, 5.5rem); line-height: 1; letter-spacing: -.07em; }
+    h1 span { color: transparent; background: linear-gradient(105deg, #fff 15%, #c4b5fd 52%, #67e8f9 95%); background-clip: text; -webkit-background-clip: text; }
+    p { max-width: 34rem; margin: 0 auto; color: #b8b7cc; font-size: 1.08rem; line-height: 1.8; }
+    .rule { width: 3rem; height: 2px; margin: 2rem auto; border-radius: 9px; background: linear-gradient(90deg, #a78bfa, #67e8f9); }
+    .links { display: flex; flex-wrap: wrap; justify-content: center; gap: .8rem; }
+    .button { display: inline-block; padding: .8rem 1.15rem; border: 1px solid #ffffff24; border-radius: 999px; color: #f7f5ff; text-decoration: none; background: #ffffff0c; }
+    .button:hover, .button:focus-visible { background: #ffffff1a; }
+    @keyframes drift { to { transform: translate(30px, 25px) scale(1.12); } }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; } }
+  </style>
+</head>
+<body>
+  <div class="orb one" aria-hidden="true"></div><div class="orb two" aria-hidden="true"></div>
+  <nav aria-label="Main navigation"><a href="hello-world.html">Home</a><a href="about.html" aria-current="page">About</a><a href="contact.html">Contact</a></nav>
+  <main>
+    <div class="eyebrow">A little about this space</div>
+    <h1><span>About us</span></h1>
+    <p>This is a fresh space for ideas, experiments, and the things worth sharing. We believe every good project starts with curiosity and grows through thoughtful collaboration.</p>
+    <div class="rule" aria-hidden="true"></div>
+    <p>Have a question or an idea to explore together? We’d love to hear from you.</p>
+    <div class="rule" aria-hidden="true"></div>
+    <div class="links"><a class="button" href="contact.html">Get in touch →</a><a class="button" href="hello-world.html">Back home</a></div>
+  </main>
+</body>
+</html>

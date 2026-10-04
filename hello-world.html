@@ -17,6 +17,9 @@
     .orb.one { background: #a855f7; top: -8rem; left: -5rem; }
     .orb.two { background: #22d3ee; right: -8rem; bottom: -9rem; animation-delay: -5s; }
     main { width: min(90vw, 760px); position: relative; padding: clamp(2rem, 7vw, 5.5rem); text-align: center; border: 1px solid #ffffff20; border-radius: 32px; background: linear-gradient(145deg, #ffffff0e, #ffffff05); box-shadow: 0 32px 100px #0006, inset 0 1px #ffffff18; backdrop-filter: blur(18px); }
+    nav { position: fixed; z-index: 2; top: 1.5rem; left: 50%; display: flex; gap: .5rem; padding: .45rem; transform: translateX(-50%); border: 1px solid #ffffff20; border-radius: 999px; background: #101226b8; backdrop-filter: blur(14px); }
+    nav a { padding: .65rem 1rem; border-radius: 999px; color: #c7c4dc; font-size: .9rem; text-decoration: none; transition: color .2s, background .2s; }
+    nav a:hover, nav a:focus-visible { color: #fff; background: #ffffff14; }
     .eyebrow { display: inline-flex; align-items: center; gap: .55rem; padding: .55rem .85rem; border: 1px solid #ffffff22; border-radius: 999px; color: #c7c4dc; font-size: .76rem; letter-spacing: .14em; text-transform: uppercase; }
     .spark { color: #67e8f9; font-size: 1rem; }
     h1 { margin: 1.5rem 0 1rem; font-size: clamp(3.4rem, 10vw, 6.7rem); line-height: .98; letter-spacing: -.075em; font-weight: 800; }
@@ -31,6 +34,11 @@
 <body>
   <div class="orb one" aria-hidden="true"></div>
   <div class="orb two" aria-hidden="true"></div>
+  <nav aria-label="Main navigation">
+    <a href="hello-world.html" aria-current="page">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
   <main>
     <div class="eyebrow"><span class="spark" aria-hidden="true">✦</span> A little something to start</div>
     <h1><span>Hello,<br>world!</span></h1>
